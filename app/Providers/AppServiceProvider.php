@@ -23,7 +23,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::unguard();
      
-   
         Password::defaults(function () {
             $rule = Password::min(8);
      

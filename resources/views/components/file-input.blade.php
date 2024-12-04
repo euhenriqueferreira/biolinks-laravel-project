@@ -1,0 +1,1 @@
+<input type="file" {{ $attributes->class(['file-input-sm file-input-bordered file-input-primary w-full max-w-xs']) }}/>

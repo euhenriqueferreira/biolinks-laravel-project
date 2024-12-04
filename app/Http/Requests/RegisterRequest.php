@@ -37,8 +37,8 @@ class RegisterRequest extends FormRequest
 
     public function tryToRegister(){
 
-        User::query()->create($this->validated());
-
+        $user = User::query()->create($this->validated());
+        
         auth()->login($user);
 
         return true;
